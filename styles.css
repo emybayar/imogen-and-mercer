@@ -1,0 +1,381 @@
+@font-face {
+  font-family: 'Golos Text';
+  src: url(https://fonts.gstatic.com/s/golostext/v4/dDc8Y_Kq6_9jJ5P-jR_Y8f4.woff2) format('woff2'),
+        url(https://fonts.gstatic.com/s/golostext/v4/dDc8Y_Kq6_9jJ5P-jR_Y8f4.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* LINK STATES */
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: line-through;
+}
+
+a:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+a:active {
+  color: red;
+}
+
+/* MAIN IMAGE WITH TEXT AND PROJECTS */
+.main-image-with-logo {
+  position: relative; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+}
+  
+.image-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: auto;
+  max-width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+  
+.hover-image {
+  width: 100%; 
+  height: auto;
+  display: block; 
+}
+  
+.logo-text-name,
+.logo-text-2-nyc {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+  color: white; 
+  padding: 5px;
+}
+
+.logo-text-name {
+  font-family: 'Libre Barcode 128 Text';
+  font-size: 4rem;
+  font-weight: 400;
+  color: white;
+  top: 10%;
+  word-break: keep-all;
+}
+  
+.logo-text-2-nyc {
+  font-family: 'Noto Serif JP';
+  font-size: 1rem;
+  font-weight: 200;
+  color: white;
+  top: 18%;
+}
+
+.college-collage {
+  position: absolute;
+  text-align: left;
+  margin: 0;
+  font-family: 'Golos Text';
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+  text-decoration: none; 
+  top: 65%;
+  left: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .image-container {
+    top: 2%;
+    position: relative;
+  }
+  .logo-text-name {
+    top: -20%;
+    width: auto;
+    max-width: 100%;
+    font-size: 2rem;
+    word-break: keep-all;
+    color: black;
+  }
+
+  .hover-image {
+    top: 30%;
+  }
+
+  .logo-text-2-nyc {
+    color: black;
+    top: -10%;
+    font-size: 0.75rem;
+  }
+
+  .college-collage {
+    color: black;
+    top: 110%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .image-container {
+    top: 5%;
+    position: relative;
+    margin-left: -15%;
+  }
+
+  .logo-text-name {
+    top: -15%;
+    width: auto;
+    max-width: 100%;
+    font-size: 2.5rem;
+    color: black;
+  }
+
+  .logo-text-2-nyc {
+    color: black;
+    top: -5%;
+    font-size: 1rem;
+  }
+
+  .college-collage {
+    color: black;
+    top: 120%;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+
+/* HEADER */
+#header {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+  
+.inner-header {
+  display: flex; 
+  justify-content: space-between; 
+}
+  
+.subscribe, .search {
+  display: inline-block; 
+  padding: 30px;
+  color: black;
+  font-family: 'Golos Text';
+  font-size: 2rem;
+  text-decoration: none;
+}
+  
+.subscribe {
+  text-align: left;
+} 
+
+.search {
+  text-align: right; 
+}
+
+@media screen and (max-width: 768px) {
+  .inner-header {
+    flex-direction: row;
+  }
+  .subscribe, .search {
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+}
+
+/* FOOTER */
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.inner-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.annie-about, .emy-about {
+  display: inline-block;
+  padding: 30px;
+  text-decoration: none;
+  color: black;
+  text-decoration: none;
+  font-family: 'Golos Text';
+  font-size: 2rem;
+}
+.annie-about {
+  text-align: left;
+}
+.emy-about {
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .inner-footer {
+    flex-direction: row;
+  }
+  .annie-about, .emy-about {
+    padding: 10px;
+    font-size: 1.7rem;
+  }
+}
+
+/* DARK MODE */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: grey;
+    color: #fff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+}
+/* END OF LANDING PAGE */
+
+/* ANNIE-CHURCH PAGE */
+
+/* LOGO */
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 4rem;
+  margin-bottom: 0.1rem;
+  font-family: "Libre Barcode 128 Text";
+  font-weight: 400;
+  color: black;
+}
+
+.location {
+  font-size: 1rem;
+  font-family: 'Noto Serif JP';
+  font-weight: 200;
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-text {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10%;
+  }
+
+  .logo {
+    font-size: 4rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .location {
+    font-size: 0.8rem;
+  }
+}
+
+.image-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #ed820e;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Noto Serif JP';
+}
+
+.text-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1vh;
+}
+
+.text-content {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .image-text-container {
+    flex-direction: column;
+  }
+
+  .text-container {
+    margin-top: 1rem;
+  }
+}
+
+.image-text-container-emy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: green;
+}
+
+.foot-end {
+  font-family: 'Libre Barcode 128 Text';
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2vh;
+}
+
+/* COLLAGES */
+
+.cc {
+  text-align: center;
+  font-family: 'Golos Text';
+  font-weight: 400;
+  color: #ed820e;
+}
+
+.cc-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem; 
+  justify-items: center;
+  align-items: center;
+}
+
