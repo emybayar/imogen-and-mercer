@@ -6,7 +6,7 @@ window.addEventListener("load", function() {
     // add a delay of 1 second before showing the image
     setTimeout(function() {
       imageContainer.style.opacity = 1;
-    }, 1000);
+    }, 500);
 });
 
 const subscribeLink = document.querySelector('.annie-about');
